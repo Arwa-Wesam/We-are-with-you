@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>podcast we are with you</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+        body {
+            
+            text-align: right;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #FFFFDD;
+            color: #016A70;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 20px;
+            z-index: 999;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2) ;
+            border-radius: 2px;
+            transition: top 0.3s; /* Add smooth transition effect */
+          }
+          .navbar-logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 2em;
+            
+          }
+          
+          .navbar-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-left: 30px;
+            display: flex;
+          }
+          
+          .navbar-links li {
+            margin-left: 20px;
+          }
+          
+          .navbar-links a {
+            text-decoration: none;
+            color: #016A70;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .navbar-links a:hover {
+            border-bottom: 2px solid #016A70;
+          }
+          .navbar-links a:hover {
+            border-bottom: 2px solid #016A70;
+          }
+        #left-box {
+            position: fixed;
+            width: 700px;
+            height: fit-content;
+            background-color: #a2c57994;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        
+        #left-box h2 {
+            text-align: center;
+        }
+        
+        #left-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #left-box li {
+            padding: 10px 0;
+        }
+        
+        #left-box audio {
+            width: 100%;
+        }
+        
+        .video-background {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        @media (min-aspect-ratio:16/9){
+           .video{
+                width: 100%;
+                height: auto;
+              }
+        }
+        @media (max-aspect-ratio:16/9){
+            .video{
+              width: auto;
+              height: 100%;
+            }
+      }
+        
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            
+            @media screen and (max-width: 768px) {
+                
+              
+    
+                #left-box {
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                }
+    
+                #left-box h2 {
+                    font-size: 24px;
+                }
+            }
+        
+        body{
+            font-family: 'Cairo', serif;
+          }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"> <img src="_4c995d04-5b8c-4301-8971-76cca8281eb0-removebg-preview.png" alt="لوجو الموقع"></a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html#section4" target="_blank">مساعدة و دعم</a></li>
+            <li><a href="index.html#section5" target="_blank">قصص ملهمة </a></li>
+           <li><a href="index.html#apps" target="_blank">برمجيات مهمة</a></li> 
+            <li><a href="index.html#section2" target="_blank">مفاهيم مهمة</a></li>
+            <li><a href="audio.html" target="_blank">بودكاست احنا معاك</a></li>
+        </ul>
+    </nav>
+    
+    <div class="video-background">
+        <video autoplay muted loop  class="video"id="video">
+            <source src="bcground.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+    <div id="left-box">
+        <h2>بودكاست احنا معاك</h2>
+        <ul>
+            <li><audio src="podcast bulling.m4a" controls></audio></li>
+            <li><audio src="digitalmark.m4a" controls></audio></li>
+            <li><audio src="lean.m4a" controls></audio></li>
+            <li><audio src="fomo.m4a" controls></audio></li>
+        </ul>
+    </div>
+    </div>
+</div>
+</body>
+</html>

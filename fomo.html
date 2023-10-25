@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>know about fomo case</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body {
+      background-color: #FFFFDD;
+      text-align: right;
+       
+        }
+        .navbar {
+            background-color: #FFFFDD;
+            color: #016A70;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 20px;
+            z-index: 999;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s; /* Add smooth transition effect */
+          }
+          .navbar-logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 2em;
+            
+          }
+          
+          .navbar-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-left: 30px;
+            display: flex;
+          }
+          
+          .navbar-links li {
+            margin-left: 20px;
+          }
+          
+          .navbar-links a {
+            text-decoration: none;
+            color: #016A70;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .navbar-links a:hover {
+            border-bottom: 2px solid #016A70;
+          }
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .left-column {
+            width: 30%;
+            padding: 20px;
+        }
+        .right-column {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+        }
+        img{
+            height: 200px;
+            width: 400px;
+        }
+        .quiz{
+            background-color: #D8D8BE;
+            padding: 10px;
+            border-radius: 10px;
+            width: 410px;
+            font-size: 0.8em;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        .quiz h1{
+            text-align: center;
+        }
+        button{
+            justify-self: center;
+            text-decoration: none;
+            background-color: white;
+            font-size: 1.2em;
+            padding: 5px;
+            border: 0;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100px;
+            align-self: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .right-column{
+            margin-left: 50px;
+            width: 700px;
+        }
+        a{
+            font-size: 1.5em;
+            
+        }
+        .second{
+            height: 400px;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .right-column {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .left-column {
+                width: 100%;
+                text-align: center;
+            }
+
+            .quiz {
+                width: 80%;
+            }
+
+            .img1 {
+                height: auto;
+                width: 100%;
+            }
+
+            .second {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .img1{
+            width: 300px;
+            height: auto;
+        }
+        body{
+            font-family: 'Cairo', serif;
+           }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"> <img src="_4c995d04-5b8c-4301-8971-76cca8281eb0-removebg-preview.png" alt="لوجو الموقع"></a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html#section4" target="_blank">مساعدة و دعم</a></li>
+            <li><a href="index.html#section5" target="_blank">قصص ملهمة </a></li>
+           <li><a href="index.html#apps" target="_blank">برمجيات مهمة</a></li> 
+            <li><a href="index.html#section2" target="_blank">مفاهيم مهمة</a></li>
+            <li><a href="audio.html" target="_blank">بودكاست احنا معاك</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left-column">
+            <div class="quiz">
+                <h1>اختبار قصير</h1>
+                <div class="question">سؤال 1: ماذا تعني حالة فومو ؟</div>
+                <input type="radio" name="q1" value="a">خوف من فوات الاشياء<br>
+                <input type="radio" name="q1" value="b"> فرح باللحظة الحالية<br>
+                <input type="radio" name="q1" value="c"> حب للمغامرات<br>
+                <br>
+                <div class="question">سؤال 2: ما الذي يشعر به الشخص المصاب بحالة فومو ؟</div>
+                <input type="radio" name="q2" value="a">  السعادة الدائمة<br>
+                <input type="radio" name="q2" value="b">القلق والخوف من أنه قد يفوته الأحداث الجيدة<br>
+                <input type="radio" name="q2" value="c"> الرضا التام<br>
+                <br>
+                <div class="question">سؤال 3: ما الذي يُنصح به للتعامل مع حالة فومو ؟</div>
+                <input type="radio" name="q3" value="a"> تجنب وسائل التواصل الاجتماعي تمامًا<br>
+                <input type="radio" name="q3" value="b">  الانخراط في المزيد من الأنشطة الاجتماعية بغض النظر عن الحالة النفسية<br>
+                <input type="radio" name="q3" value="c"> توجيه الانتباه إلى اللحظة الحالية وقبول حقيقة أن كل شخص يعيش تجاربه الخاصة<br>
+                <br>
+                <button onclick="calculateScore()">اجب</button>
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <img src="FOMO (1).png" alt="Your Image">
+            <h2>حالة FOMO</h2>
+<p>المختصرة لجملة "Fear of Missing Out" باللغة الإنجليزية، هي حالة نفسية تعبّر عن القلق والخوف الذي ينتاب الشخص عندما يعتقد أن الآخرين يخوضون تجارب رائعة أو يمتلكون معلومات مهمة أو يشاركون في أنشطة اجتماعية، وهو غير قادر على المشاركة فيها. هذا الشعور ينشأ عندما يخشى الفرد أن يفوته الكثير من المرح والفرص إذا لم يكن حاضرًا في تلك الأوقات.</p>
+            <img class="img1"src="10137713_4342729.jpg" alt="Your Image">
+            <p>هذه الحالة ترتبط بشكل كبير بوسائل التواصل الاجتماعي وثقافة الإنترنت الحديثة، حيث يمكن للأفراد رؤية نشاطات الآخرين وحياتهم اليومية بشكل مستمر. ونتيجة لذلك، يمكن أن يشعر الشخص المصاب بحالة FOMO بالغيرة أو القلق، ويجد نفسه ينخرط بشكل زائد في وسائل التواصل الاجتماعي، سعيًا لمتابعة حياة الآخرين والمحافظة على اتصاله بالعالم الافتراضي.</p>
+            <iframe width="700" height="360" src="https://www.youtube.com/embed/0o0Zspv4Jks" title="كيف تحمى نفسك و تعالج نفسك من حالة فومو" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>للتعامل مع حالة FOMO، يُنصح بتوجيه الانتباه إلى اللحظة الحالية وقبول حقيقة أن كل شخص يعيش تجاربه الخاصة، وأنه من الطبيعي أحيانًا أن يكون لدينا أوقات للانعزال أو للاستمتاع بالوقت بمفردنا. يمكن أيضًا التفكير بشكل إيجابي حول الأمور التي نستمتع بها والأشياء التي نحققها بدلاً من التركيز على ما نفقده. من خلال تقدير اللحظة الحالية والاستمتاع بما نملكه وبالأنشطة التي نشارك فيها، يمكننا التغلب على حالة FOMO والعيش براحة وثقة في أنفسنا.</p>
+                <h3>مواقع مفيدة و مهمة</h3>
+    <a href="https://attaa.sa/library/view/1740"  target="_blank"> <p>الوقاية من الابتزاز الرقمى</p></a>
+    <a href="https://www.unicef.org/jordan/ar/%D8%A7%D9%84%D8%AA%D9%86%D9%85%D8%B1-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%85%D8%A7-%D9%87%D9%88-%D9%88%D9%83%D9%8A%D9%81-%D9%8A%D9%85%D9%83%D9%86-%D8%A5%D9%8A%D9%82%D8%A7%D9%81%D9%87/%D9%82%D8%B5%D8%B5" target="_blank"> <p>التنمر الإلكتروني: ما هو وكيف يمكن إيقافه</p></a>
+    <a href="https://www.unicef.org/ar/%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%91%D8%B1-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%83%D9%8A%D9%81-%D9%86%D9%88%D9%82%D9%81%D9%87/%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D9%86%D9%81" target="_blank"> <p>التنمّر عبر الإنترنت: ما هو وكيف نوقفه</p></a>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked').value,
+                q2: document.querySelector('input[name="q2"]:checked').value,
+                q3: document.querySelector('input[name="q3"]:checked').value
+            };
+
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'c'
+            };
+
+            let score = 0;
+
+            for (const question in answers) {
+                if (answers[question] === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = `انت حصلت على ${score} نقاط من ثلاثة `;
+        }
+    </script>
+</body>
+</html>
